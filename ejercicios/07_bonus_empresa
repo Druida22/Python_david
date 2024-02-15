@@ -1,0 +1,58 @@
+'''Exercici 7: 
+Una determinada empresa evalua els seus empleats a final de cada any. 
+Els punts que poden obtenir en l'avaluació comencen en 0.0 i poden anar augmentant, 
+traduint-se en majors beneficis. 
+Els punts que poden aconseguir els empleats poden ser 0.0, 0.4, 0.6 o més, 
+però no valors intermitjos entre les xifres mencionades. 
+A continuació es mostra una taula amb els nivells corresponents a cada puntuació. 
+La quantitat de diners aconseguida en cada nivell és de 2400€ multiplicada per la puntuació del nivell.
+Escriure un programa que llegeixi la puntuació de l’usuari i indiqui quin serà el sou de rebrà.
+'''
+
+print('Tens que respondre amb un numero')
+
+puntuatge = 0.0
+salari = 2400.00
+
+print('1) A quina hora arribes a treballar?')
+print('   1. A les 7.50h')
+print('   2. A les 8.00h')
+print('   3. A les 8.15h')
+primera_pregunta = int(input())
+
+
+if primera_pregunta == 1:
+    puntuatge += 0.4
+elif primera_pregunta == 2:
+    puntuatge += 0.2
+elif primera_pregunta == 3:
+    puntuatge += 0.0
+else:
+    print('No has donat una resposta valida')
+
+print('2) Quantes hores has traballat cada setmana?')
+print('   1. mes de 40h')
+print('   2. Menys de 40h')
+segona_pregunta = int(input())
+
+if segona_pregunta == 1:
+    puntuatge += 0.2
+elif segona_pregunta == 2:
+    puntuatge == 0.0
+else:
+    print('No has donat una resposta valida')
+
+print('3) Quants anys portes treballant a la empresa')
+print('   1. Mes de 5 anys')
+print('   2. Menys de 5 anys')
+tercera_pregunta = int(input())
+
+if tercera_pregunta == 1:
+    puntuatge += 0.2
+elif tercera_pregunta == 2:
+    puntuatge += 0.0
+else:
+    print('No has donat una resposta valida')
+
+
+print(f'El sou que rebra vuste es de {salari * (puntuatge + 1)}')
