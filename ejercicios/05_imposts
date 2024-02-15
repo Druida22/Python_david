@@ -1,0 +1,16 @@
+'''Exercici 5: 
+Per tributar un determinat impost cal ser major de 16 anys i 
+tenir uns ingressos iguals o superiors a 1000 € mensuals. 
+Escriure un programa que pregunti a l’usuari la seva edat i 
+els seus ingressos mensuals i mostri en pantalla si l’usuari ha de tributar o no.
+'''
+try:
+    edat = int(input('Quina es la teva edat? '))
+    ingressos = int(input('Quins son els teus ingressos mensuals? '))
+
+    if edat >= 16 and ingressos >= 1000:
+        print('Has de tributar')
+    elif edat < 16 or ingressos < 1000:
+        print('No has de tributar')
+except:
+    print('Ha habido un error porque no has indicado un numero valido')
