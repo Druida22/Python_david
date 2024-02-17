@@ -1,0 +1,15 @@
+'''Exercici 4: 
+Escriure un programa que demani a l’usuari un nombre enter i 
+mostri en pantalla si és parell o imparell.
+'''
+try:   
+    numero = int(input('introduzca un numero porfavor: '))
+    numero = float(numero)
+
+    if numero % 2 == 0:
+        print('Tu numero es parejo')
+    elif numero % 2 != 0:
+        print('Tu numero es imparejo')
+except:
+    print('No has indicado un numero valido')
+    exit
