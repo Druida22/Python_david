@@ -1,0 +1,9 @@
+'''Exercici 3: 
+Escriure un programa que pregunti el nom a l’usuari a la pantalla 
+i després de que l’usuari l’introdueixi, 
+mostri per pantalla la cadena Hola, <nom>, on el nom sigui el nom que l’usuari ha introduït.
+'''
+
+nom = str(input('Quin es el tu nom? '))
+
+print(f'El teu nom es {nom}')
