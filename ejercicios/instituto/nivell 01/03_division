@@ -1,0 +1,15 @@
+'''Exercici 3: 
+Escriure un programa que demani a l’usuari dos nombres i 
+mostri per pantalla la seva divisió. 
+Si el divisor és zero, 
+el programa ha de mostrar que respondre que això no pot ser.
+'''
+
+dividendo = int(input('Por favor introduzca el dividendo: '))
+divisor = int(input('Por favor introduzca el divisor: '))
+
+if divisor == 0:
+    print('El divisor no puede ser 0')
+else :
+    print(f'el resultado de la division es {dividendo/divisor}')
+
