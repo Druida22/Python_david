@@ -1,0 +1,9 @@
+'''Exercici 4: 
+Escriu un programa que mostri per pantalla el resultat de la següent operació aritmètica:
+'''
+
+import math
+
+resultat_operacio = (math.pow(3 + 2 / (2 * 5), 2))
+
+print(resultat_operacio)
