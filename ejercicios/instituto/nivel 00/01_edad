@@ -1,0 +1,13 @@
+'''Exercici 1: 
+Escriure un programa que pregunti a l’usuari la seva edat i 
+mostri en pantalla si és major d’edat o no.
+'''
+
+edat = int(input('cual es tu edad? '))
+
+if edat >= 18:
+    print('Eres mayor de edad')
+elif edat < 18:
+    print('Eres menor de edad')
+else:
+    print('No has dado una edad valida')
