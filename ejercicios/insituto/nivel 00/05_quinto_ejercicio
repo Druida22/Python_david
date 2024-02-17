@@ -1,0 +1,9 @@
+'''Exercici 5: 
+Escriure un programa que pregunti a l’usuari pel nombre d’hores treballades i el cost per hora. 
+Després ha de mostrar per pantalla la paga que correspon.
+'''
+
+hores = int(input('Quantes hores has traballat? '))
+cost = int(input('A quant euros la euro? '))
+
+print(f'LLa teva paga correspondent es de {hores * cost}€')
