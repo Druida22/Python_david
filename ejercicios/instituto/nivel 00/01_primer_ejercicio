@@ -1,0 +1,3 @@
+'''Exercici 1: Escriure un programa que mostri per pantalla la cadena: Hola món!
+'''
+print('Hola món!')
