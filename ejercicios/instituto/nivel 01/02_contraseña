@@ -1,0 +1,16 @@
+'''Exercici 2: 
+Escriure un programa que guardi una contrasenya en una variable, 
+pregunti a l’usuari per la contrasenya i 
+imprimieixi en pantalla si la contrasenya introduïda per l’usuari 
+coincideix amb la guardada en la variable.
+'''
+
+contraseña = int(input('Por favor cree una contraseña: '))
+contraseña_provada = int(input("Introduzca la contraseña: "))
+
+while contraseña_provada != contraseña:
+    print('contraseña incorecta')
+    contraseña_provada = int(input('Vuelva a poner la contraseña: '))
+
+
+print('Contraseña corecta')
