@@ -1,0 +1,7 @@
+'''Exercici 2: 
+Escriure un programa que guardi la cadena Hola món! en una variable i, 
+a continuació, mostri per pantalla el contingut de la variable.
+'''
+
+texto = ('hola món!')
+print(texto)
