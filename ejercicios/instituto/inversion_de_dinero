@@ -1,0 +1,49 @@
+'''Volem crear un missatge que ens calculi els diners que tindrem al banc 
+si fem una inversió d’un cert nombre de diners. 
+El programa ha de demanar la quantitat de diners, 
+el nombre d’anys que vols invertir i el percentatge d’interès. 
+En el nostre cas treballarem amb interès compost. 
+Recordeu que l’interès compost és aquell que que aplica la taxa d’interès 
+sobre la quantitat que hi ha al banc, no sobre la quantitat inicial invertida. 
+Així doncs, en general acostuma a sortir més a compte a llarg plaç. 
+La fórmula de l’interès compost és la següent:
+CF = CI ·(1+i) sobre n    on:
+n és la quantitat d’anys a la que volem calcular la inversió (p.e. 10 anys)
+i és l’interès que s’aplicarà (p.e. 3%). 
+L’interès s’escriu com a percentatge, 
+així que si ens donen un 3% d’interès, a la fórmula hem d’escriure 0,03.
+CI és el Capital Inicial, és a dir, 
+la quantitat que invertim, la quantitat de la que inicialment disposem (p.e. 5000€)
+CF és el Capital Final, és a dir, la quantitat que tindrem al banc passats els 10 anys.
+En l’exemple anterior, el capital final serà el següent:
+CF = CI · (1+i)n = 5000 · (1+0.03)10 =6719.58€ 
+Així doncs, el nostre programa haurà de constar de les següents parts:
+1- Demanarà el Nom, el Primer Cognom i el Segon Cognom a l’usuari i els guardarà com a tres variables diferents.
+2- Demanarà la quantitat inicial que es vol invertir, el tipus d’interès i el nombre d’anys als quals es pretén fer la inversió.
+3- Transformarà les variables anteriors en nombres.
+4- Calcularà el Capital Final fent servir la fórmula anterior.
+5- Escriurà: “En/Na Cognom1 Cognom2, Nom ha invertit CI€ a interès compost. Després de n anys a un interès del i%, disposa de CF€.”.
+'''
+
+import math
+
+nom = str(input('Quin es el teu nom? '))
+cognom_primer = str(input('Quin es el teu primer cognom? '))
+cognom_segon = str(input('Quin es el teu segon cognom? '))
+
+inversio = int(input('Quina quantita vol invertir? '))
+tipus_interes = int(input('Quin tipus de interes vol(1. interes simple o 2. interes compost): '))
+anys = int(input('Per cuants anys vols invertir? '))
+
+
+ganancia_total = ''
+if tipus_interes == 1:
+    ganancia_total = inversio * math.pow((1 + 0.03), anys)
+    tipus_interes = 'Interes compost'
+elif tipus_interes == 2:
+    ganancia_total = inversio * (1 + 0.03) * anys
+    tipus_interes = 'Interes simple'
+else:
+    exit
+
+print(f'En {cognom_primer} {cognom_segon}, {nom} ha invertit {inversio}€ a {tipus_interes}. Despres de {anys} anys a un interes del 3%, disposa de {ganancia_total}€')
