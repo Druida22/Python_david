@@ -1,0 +1,22 @@
+'''
+Exercici 3: 
+Un any de traspàs és aquell que té 366 dies. 
+Per tal que un any sigui de traspàs s’ha de complir una de les següents condicions:
+
+Ser múltiple de 4 i no de 100.
+
+Ser múltiple de 4 i de 400.
+
+Per exemple, els anys  2024, 2028 o 2000 són de traspàs. 
+En canvi, 2025, 2026 o 2100 no ho són. 
+Crea un programa que demani un any i escrigui si aquest és de traspàs o no.
+'''
+
+any = int(input('Quin any es? '))
+
+if any % 4 == 0 and any % 100 != 0:
+    print(f'El any {any} es de traspàs')
+elif any % 4 == 0 and any % 400:
+    print(f'El any {any} es de traspàs')
+else:
+    print('El any no es de traspas')
