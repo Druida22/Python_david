@@ -1,0 +1,24 @@
+'''Exercici 2: 
+Escriu un programa que pregunti primer si es vol calcular l’àrea d’un triangle o la d’un cercle. 
+Si es contesta que es vol calcular l’àrea d’un triangle (escrivint T), 
+el programa ha de demanar la base i l’altura i calcular-la. 
+Si, en canvi, es contesta que es vol calcular l’àrea d’un cercle (escrivint C), 
+el programa ha de demanar el radi i calcular l’àrea. 
+Per calcular l’àrea del cercle, podeu considerar pi=3,141592'''
+
+from math import pi as valor_pi
+from math import pow as elevado_a
+
+figura = str(input('Que area vols calcular? Si vols calcular la de un cercle escriu (C en mayuscules), di vols calcular la de un triangle escriu (T en mayuscules) '))
+
+if figura == 'C':
+    base_triangle = int(input('Quina es la area del triangle: '))
+    altura_triangle = int(input('Quina es la altura del triangle: '))
+    area_triangle = base_triangle * altura_triangle / 2
+    print(f'La base del triangle es {area_triangle}')
+elif figura == 'T':
+    radi_cercle = int(input('Quin es el radi del cercle: ')) 
+    area_cercle = valor_pi * elevado_a(radi_cercle, 2)
+    print(f'La area del seu cercle es de {area_cercle}')
+else:
+    print('Hi ha hagut un error. Torni a provar')
