@@ -1,0 +1,19 @@
+'''Exercici 1:  
+Segons les Nacions Unides, 
+una persona és jove dels 15 als 24 anys. 
+A partir de llavors, 
+es considera que es una persona adulta. 
+Crea un programa que demani l’edat d’una persona i escrigui en pantalla si aquesta és adulta o no.'''
+try:
+    edat = int(input('Quina es la teva edat? '))
+    
+    if edat >= 15 and edat <=24:
+        print('Ets jove')
+    elif edat < 15:
+        print('Ets molt jove')
+    elif edat > 24:
+        print('Ets adult')
+    else:
+        print('No has donat una xifra valida')
+except:
+    print('No has donat una xifra valida')
